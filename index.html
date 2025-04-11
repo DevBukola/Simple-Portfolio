@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="m-0 p-0 h-full overflow-hidden">
+    <main class="bg-gray-900 h-[100%]">
+      <div class="relative">
+        <nav
+          class="flex items-center justify-center py-[10px] px-[20px] w-full"
+        >
+          <input type="checkbox" id="hamburger" class="hidden peer" />
+          <ul
+            class="hidden peer-checked:flex flex-col md:flex md:flex-row gap-[10px] md:gap-[30px] text-[18px] text-orange-400 font-[600] bg-white md:bg-inherit p-4 w-[70%] h-[30vh] md:h-fit md:w-fit items-center justify-center rounded-[10px] absolute left-[-20px] top-full md:static"
+            style="font-family: 'Poppins', sans-serif"
+          >
+            <li><a class="hover:text-orange-100" href="">Home</a></li>
+            <li><a class="hover:text-orange-100" href="">About</a></li>
+            <li><a class="hover:text-orange-100" href="">Contact</a></li>
+          </ul>
+
+          <label
+            for="hamburger"
+            class="flex flex-col gap-[3px] absolute right-[10px] md:hidden mt-3"
+          >
+            <div class="w-[20px] h-[2px] bg-white"></div>
+            <div class="w-[20px] h-[2px] bg-white"></div>
+            <div class="w-[20px] h-[2px] bg-white"></div>
+          </label>
+        </nav>
+      </div>
+
+      <div
+        class="h-screen flex flex-col gap-[10px] items-center md:justify-center py-[40px] px-[10px] md:py-0 md:px-0"
+      >
+        <div
+          class="flex items-center justify-center rounded-[50%] h-[280px] w-[280px] md:h-[320px] md:w-[320px] py-0 pl-0 pr-0"
+          style="box-shadow: 0 1px 0 0 #000"
+        >
+          <div
+            style="
+              background-image: url(assets/profile-img2.jpeg);
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+            "
+            class="h-[92%] w-[92%] rounded-[50%] transition-transform duration-300 hover:scale-110"
+          ></div>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-[6px]">
+          <span
+            class="text-[20px] md:text-[24px] text-white"
+            style="font-family: 'Poppins', sans-serif"
+          >
+            Hello, I am <span class="text-orange-600">Oluwabukola</span>
+          </span>
+          <h1
+            style="font-family: 'cursive'"
+            class="text-[28px] md:text-[40px] text-orange-400"
+          >
+            A passionate Frontend Dev.
+          </h1>
+          <p
+            class="font-[100] text-[12px] md:text-[19px] text-white text-center"
+            style="font-family: 'Poppins', sans-serif"
+          >
+            A highly motivated, detail-oriented frontend developer who has a
+            passion for continuous learning and development.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
